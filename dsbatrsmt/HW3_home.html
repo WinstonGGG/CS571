@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home | Menu</title>
+</head>
+
+<body>
+
+	<h1>Trojan Café</h1>
+	<div id="header-bg">
+		<div id="header">
+			<h2><a href="HW3_home.html">Home</a></h2>
+			<h2><a href="#italian">Italian</a></h2>
+			<h2><a href="#india">Indian</a></h2>
+			<h2><a href="#japan">Japanese</a></h2>
+			<h2><a href="#dessert">Desserts</a></h2>
+			<h2><a href="HW3_Welcome.html">About</a></h2>
+			<h2><a href="HW3_Welcome.html">Contact</a></h2>
+		</div>
+	</div>
+
+	<div id="rest">   
+		<div id="rest-img"></div> 
+		<!-- <img src="Restaurant.jpg" /> -->
+		<div id="enjoy">
+			Enjoy the Scenic View!!
+		</div>
+		<p id="book">Book Your Reservation</p>
+	</div>
+
+	<h3>Explore our Delicious Cuisines</h3>
+	<div id="menu">
+		<div class="cuisine" id="italian">
+			<div class="child">
+				<img class="odd" src="Italian Cuisine.jpg"/>
+			</div>
+			<div class="cuisine_intro child">
+				<h4>Italy's finest</h4>
+				<p class="detail">From our Lasagna to our Protein Penne, we have delicious options for every taste!</p>
+			</div>
+		</div>
+		<div class="cuisine" id="india">
+			<div class="cuisine_intro child">
+				<h4>India's Flavors</h4>
+				<p class="detail">Our dishes are blended with masterful savory spices</p>
+			</div>
+			<div class="child">
+				<img class="even" src="Indian Cuisine.jpg" />
+			</div>
+		</div>
+		<div class="cuisine" id="japan">
+			<div class="child">
+				<img class="odd"src="Japanese Cuisine.jpg" />
+			</div>
+			<div class="cuisine_intro child">
+				<h4>Japanese Cuisine</h4>
+				<p class="detail">Delicious dining options from Sake to Sushi</p>
+			</div>
+		</div>
+		<div class="cuisine" id="dessert">
+			<div class="cuisine_intro child">
+				<h4>Desserts</h4>
+				<p class="detail">From Italian Tiramisu to Indian Gulab Jamun</p>
+			</div>
+			<div class="child">
+				<img class="even" src="Dessert.jpg" />
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<style type="text/css">
+	h1 {
+		font-size: 28px;
+		font-family: Georgia;
+		color: #00007A;
+		margin: 15px;
+		margin-left: 350px;
+		width: 200px;
+		padding: 0;
+	}
+	#header-bg {
+		height: 35px;
+		background: #FAEBD6;
+	}
+	#header {
+		width: 1000px;
+		margin-left: 50px;
+	}
+	h2 {
+		float: left;
+		margin: 0;
+		margin-left: 20px;
+	}
+	h2 a {
+		font-size: 16px;
+		text-decoration: none;
+		font-weight: normal;
+		font-family: Arial;
+	}
+	#rest {
+		width: 750px;
+		height: 450px;
+		position: relative;
+		overflow: hidden;
+		margin-left: 80px;
+		/* margin-top: -100px; */
+	}
+
+	#rest-img {
+		width: 800px;
+		background-image: url("Restaurant.jpg");
+		background-size: 800px 550px;
+		background-repeat: no-repeat;
+		min-height: 450px;
+
+		background-attachment: fixed;
+		background-position: 0 0;
+		
+		margin-left: -30px;
+		margin-top: 25px;
+	}
+	/* #rest img {
+		
+		margin-bottom: 10px;
+		position: relative;
+		
+		top: 0;
+    	left: 0;
+	} */
+	
+	#enjoy {
+		font-size: 40px;
+		font-weight: 600;
+		color: #FFF8DC;
+		position: absolute;
+		left: 200px; 
+		top: 190px;
+	}
+	#book {
+		color: #666563;
+		font-family: Tahoma, Verdana;
+		font-size: 12px;
+		background-color: white;
+		border-style: double;
+		padding: 7px;
+		padding-left: 15px;
+		padding-right: 15px;
+		position: absolute;
+		left: 475px; 
+		top: 240px;
+	}
+
+	h3 {
+		font-size: 20px;
+		font-family: Comic Sans MS;
+		color: #a11383;
+		text-decoration-line: underline;
+  		text-decoration-style: double;
+		margin-left: 300px;
+		width: 300px;
+	}
+
+	.cuisine {
+		margin-bottom: 20px;
+		width: 850px;
+		height: 300px;
+		margin-left: 20px;
+	}
+	.cuisine img {
+		width: 320px;
+		height: 240px;
+	}
+	.odd {
+		border-style: solid;
+		border-width: 10px;
+		border-color: #ffebe6;
+	}
+	.even {
+		border-style: solid;
+		border-width: 10px;
+		border-color: #bcdce7;
+		margin-left: 25px;
+	}
+	.cuisine_intro {
+		width: 250px;
+	}
+	h4 {
+		margin: 0;
+		margin-left: 10px;
+		color: #1E47B9;
+	}
+	.detail {
+		margin: 0;
+		margin-left: 10px;
+		width: 290px;
+	}
+	.child {
+		/* float: left; */
+		vertical-align: middle;
+    	display: inline-block;
+    	margin: 0 auto;
+		padding-left: 60px;
+	}
+
+</style>
+</html>
