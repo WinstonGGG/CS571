@@ -1,0 +1,28 @@
+{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				{% for message in messages %}
+					{% if message == 'Please enter valid values.' %}
+						<div class="invalid_input">
+							<p class="invalid_input_title">{{ request.url }} says</p>
+							<p class="invalid_input_text">{{ message }}</p>
+							<p class="invalid_input_button">OK</p>
+						</div>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+
+# app.logger.debug(session)
+    # try:
+    #     message = json.loads(session['messages'])
+    # except:
+    #     message = {'valid': 'yes'}
+    # if keyword == '' or keyword == None or category == '' or category == None:
+    #     flash("Please enter valid values.")
+    #     show_id = json.loads(request.get_json())['show_id']
+        
+    #     return redirect(url_for('.search_data'), code=307)
+    
+    # app.logger.debug(keyword + ', ' + category)
+
+2019-03-09T20:54:00.699Z
